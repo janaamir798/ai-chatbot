@@ -1,15 +1,9 @@
-def test(a=0):
-    if a==0:
-        return 1 
-    elif a==1:
-        return 2
-    else :
-        return 3
-    
+def greet(name: str, excited: bool = False) -> str:
+    message = f"Hello, {name}"
+    if excited:
+        message = message + "!!!"
+    return message
 
 
-print(test())
-print(test(1))
-print(test(2))    
-
-
+print(greet("Jana"))
+print(greet("Jana", excited=True))
